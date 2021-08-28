@@ -1,6 +1,12 @@
 import './InstallPage.js'
 import './LoginPage.js'
 
+function speak(textForSpeak) {
+  var synth = window.speechSynthesis
+  var textToSpeak = new window.SpeechSynthesisUtterance(textForSpeak)
+  synth.speak(textForSpeak)
+}
+
 const app = document.getElementById('app')
 
 app.innerHTML = '<install-page></install-page>'
