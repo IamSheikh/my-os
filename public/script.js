@@ -13,4 +13,10 @@ installForm.addEventListener('submit', (e) => {
   window.username = document.getElementById('username').value
   window.password = document.getElementById('password').value
   app.innerHTML = '<login-page></login-page>'
+  const loginForm = document.getElementById('loginForm')
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    window.userpassword = document.getElementById('userpassword').value
+    console.log(window.userpassword)
+  })
 })
