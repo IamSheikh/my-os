@@ -20,7 +20,7 @@
 }
 
 #loginForm {
-    width: 30%;
+    width: 27%;
     margin: auto;
     display: block;
 }
@@ -32,7 +32,12 @@
 }
 
 #loginForm h3 {
-    width: 30%;
+    width: 27%;
     margin: auto;
     display: block;
+}
+
+#main-form {
+    display: flex;
+    justify-content: center;
 }

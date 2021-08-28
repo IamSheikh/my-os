@@ -6,8 +6,10 @@ class LoginPage extends HTMLElement {
             <form id="loginForm">
                 <img src="./img/avatar.png" alt=${window.name} class="login-form-img" />
                 <h3 class="main-text">${window.name}</h3>
-                <input type="password" name="userpassword" id="userpassword" placeholder="Enter your password..." class="main-input" />
-                <button class="main-btn">Login</button>
+                <div id="main-form">
+                  <input type="password" name="userpassword" id="userpassword" placeholder="Enter your password..." class="main-input" />
+                  <button class="main-btn">Login</button>
+                </div>
             </form>
     `
   }
