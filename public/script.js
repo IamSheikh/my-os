@@ -7,6 +7,13 @@ function speak(textForSpeak) {
   synth.speak(textForSpeak)
 }
 
+function Response(response, element) {
+  this.response = response
+  this.element = element
+  this.element.style.margin = '1rem'
+  this.element.append(this.response)
+}
+
 const app = document.getElementById('app')
 
 app.innerHTML = '<install-page></install-page>'
