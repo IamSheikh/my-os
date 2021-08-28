@@ -18,3 +18,11 @@
 .main-btn {
     padding: 0.5rem;
 }
+
+#loginForm {
+    min-height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
