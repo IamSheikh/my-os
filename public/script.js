@@ -17,6 +17,10 @@ installForm.addEventListener('submit', (e) => {
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault()
     window.userpassword = document.getElementById('userpassword').value
-    console.log(window.userpassword)
+    if (window.password == window.userpassword) {
+      console.log('Successfully Logged In')
+    } else {
+      console.log('Please enter correct password')
+    }
   })
 })
