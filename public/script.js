@@ -49,6 +49,11 @@ installForm.addEventListener('submit', (e) => {
             new Response(`/Users/${window.username}`, responseDiv)
             openTerminalBtn()
             break
+          default:
+            document.querySelector('desktop-page').style.display = 'none'
+            new Response(`turtlecli: ${cli} command not founded`, responseDiv)
+            openTerminalBtn()
+            break
         }
         console.log(cli)
       }
