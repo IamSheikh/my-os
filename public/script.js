@@ -46,11 +46,13 @@ installForm.addEventListener('submit', (e) => {
         switch (cli) {
           case 'pwd':
             document.querySelector('desktop-page').style.display = 'none'
+            speak(`Current Directory is slash Users slash ${window.username}`)
             new Response(`/Users/${window.username}`, responseDiv)
             openTerminalBtn()
             break
           default:
             document.querySelector('desktop-page').style.display = 'none'
+            speak(`turtle c l i: ${cli} command not founded`)
             new Response(`turtlecli: ${cli} command not founded`, responseDiv)
             openTerminalBtn()
             break
