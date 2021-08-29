@@ -40,6 +40,16 @@ installForm.addEventListener('submit', (e) => {
         let cli = window.prompt(
           `${window.username}${window.name.split(' ').join('')}-TurtleOS$`
         )
+        const responseDiv = document.createElement('div')
+        responseDiv.style.fontSize = '1rem'
+        document.body.append(responseDiv)
+        switch (cli) {
+          case 'pwd':
+            document.querySelector('desktop-page').style.display = 'none'
+            new Response(`/Users/${window.username}`, responseDiv)
+            openTerminalBtn()
+            break
+        }
         console.log(cli)
       }
       function openTerminalBtn() {
@@ -50,7 +60,7 @@ installForm.addEventListener('submit', (e) => {
         openTerminalBtn.style.marginLeft = '0.5rem'
         openTerminalBtn.style.marginRight = '0.5rem'
         openTerminalBtn.style.cursor = 'pointer'
-        openTerminalBtn.style.textContent = 'Open Terminal'
+        openTerminalBtn.textContent = 'Open Terminal'
         openTerminalBtn.addEventListener('click', () => {
           openTerminal()
         })

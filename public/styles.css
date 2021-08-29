@@ -11,13 +11,15 @@
 }
 
 .main-input {
-    padding: 0.5rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
     margin-right: 0.5rem;
     text-align: center;
 }
 
 .main-btn {
-    padding: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
 }
 
 #loginForm {
@@ -63,4 +65,8 @@
 
 .apps {
     cursor: pointer;
+}
+
+button {
+    border: none;
 }
