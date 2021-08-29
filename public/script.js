@@ -1,5 +1,6 @@
 import './InstallPage.js'
 import './LoginPage.js'
+import './Desktop.js'
 
 function speak(textForSpeak) {
   var synth = window.speechSynthesis
@@ -32,6 +33,7 @@ installForm.addEventListener('submit', (e) => {
     window.userpassword = document.getElementById('userpassword').value
     if (window.password == window.userpassword) {
       speak('Successfully Logged In')
+      app.innerHTML = '<desktop-page></desktop-page>'
       console.log('Successfully Logged In')
     } else {
       speak('Please enter correct password')
