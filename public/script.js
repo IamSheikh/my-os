@@ -34,6 +34,14 @@ installForm.addEventListener('submit', (e) => {
     if (window.password == window.userpassword) {
       speak('Successfully Logged In')
       app.innerHTML = '<desktop-page></desktop-page>'
+      const app1 = document.getElementById('app-1')
+      app1.addEventListener('click', () => openTerminal())
+      function openTerminal() {
+        let cli = window.prompt(
+          `${window.username}${window.name.split(' ').join('')}-TurtleOS$`
+        )
+        console.log(cli)
+      }
       console.log('Successfully Logged In')
     } else {
       speak('Please enter correct password')
