@@ -42,6 +42,20 @@ installForm.addEventListener('submit', (e) => {
         )
         console.log(cli)
       }
+      function openTerminalBtn() {
+        const openTerminalBtn = document.createElement('button')
+        openTerminalBtn.className = 'openTerminalBtn'
+        openTerminalBtn.style.padding = '1rem'
+        openTerminalBtn.style.border = 'none'
+        openTerminalBtn.style.marginLeft = '0.5rem'
+        openTerminalBtn.style.marginRight = '0.5rem'
+        openTerminalBtn.style.cursor = 'pointer'
+        openTerminalBtn.style.textContent = 'Open Terminal'
+        openTerminalBtn.addEventListener('click', () => {
+          openTerminal()
+        })
+        document.body.append(openTerminalBtn)
+      }
       console.log('Successfully Logged In')
     } else {
       speak('Please enter correct password')
