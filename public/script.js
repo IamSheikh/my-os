@@ -4,7 +4,7 @@ import './LoginPage.js'
 function speak(textForSpeak) {
   var synth = window.speechSynthesis
   var textToSpeak = new window.SpeechSynthesisUtterance(textForSpeak)
-  synth.speak(textForSpeak)
+  synth.speak(textToSpeak)
 }
 
 function Response(response, element) {
