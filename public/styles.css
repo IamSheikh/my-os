@@ -48,3 +48,15 @@
     display: flex;
     justify-content: center;
 } */
+
+#apps {
+    margin: 1rem;
+}
+
+#apps i {
+    font-size: 7rem;
+}
+
+#apps h3 {
+    
+}
